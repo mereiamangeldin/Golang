@@ -1,0 +1,18 @@
+<div class="task">
+  <input type="checkbox" [(ngModel)]="this.task.complete" (ngModelChange)="changeTask(task)">
+  <div *ngIf="!edit">
+    <input *ngIf="!this.task.complete" type="text" name="" class="text" value="{{task.message}}" readonly>
+    <input *ngIf="this.task.complete" type="text" name="" class="text" value="{{task.message}}" readonly style="text-decoration: line-through">
+
+  </div>
+
+  <input *ngIf="!this.task.complete && edit" type="text" [(ngModel)]="message" name="message" value="{{task.message}}" class="input">
+
+  <span class="actions">
+      <button><img src="https://cdn.icon-icons.com/icons2/2621/PNG/512/gui_edit_icon_157165.png" style="width: 22px" (click)="formInit()" *ngIf="!edit && !task.complete" class="edit"></button>
+      <button><img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" style="width: 22px" (click)="saveTask(task)" *ngIf="edit"></button>
+        <button><img src="https://cdn-icons-png.flaticon.com/512/3687/3687412.png" style="width: 22px" (click)="deleteTask(task.ID)" *ngIf="!task.complete"></button>
+    <button><img src="https://cdn-icons-png.flaticon.com/512/3687/3687412.png" style="width: 22px" (click)="deleteTask(task.ID)" *ngIf="task.complete" class="delete"></button>
+
+  </span>
+</div>

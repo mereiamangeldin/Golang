@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="../static/css/index.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+</head>
+<body>
+<main>
+  <header class="home">
+    <h2 class="head-item shop">SHOP</h2>
+    <div class="head-item menu">
+      <a href="/home" class="menu-item" style="text-decoration: underline">Главная</a>
+      <a href="/add-item" class="menu-item">Добавить товар</a>
+    </div>
+    <div class="head-item user">
+      <a href="/">Log out</a>
+    </div>
+  </header>
+</main>
+
+<div class="middle">
+  <form action="/home-name" class="sort">
+    <input type="text" placeholder="Введите название" name="pattern" autocomplete="off">
+    <input type="submit" value="Искать" class="search">
+  </form>
+  <form action="/home-filter" class="filter">
+    <input type="submit" value="Сортировать по цене" class="search price">
+  </form>
+</div>
+
+{{ range . }}
+<div class="item">
+  <span class="item-column">Name: {{ .Name }}</span>
+  <span class="item-column">Country: {{ .Country }}</span>
+  <span class="item-column">Price: {{.Price }}</span>
+  <form action="/delete-item" style="position: relative; left: 80px">
+    <input type="submit" value="X" style="color: red; font-size: 14px; background-color: #1c1e21; border: 2px solid red; border-radius: 12px" name="{{ .Name }}">
+  </form>
+  </div>
+{{ end }}
+
+</body>
+</html>

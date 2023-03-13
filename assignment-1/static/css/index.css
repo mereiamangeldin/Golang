@@ -1,0 +1,302 @@
+body{
+    font-family: Helvetica, Arial, sans-serif;
+        background-color: #1c1e21;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu{
+    margin-left: 440px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+}
+.menu-item{
+    margin-left: 80px;
+}
+
+.shop{
+    font-size: 40px;
+    color: darkgoldenrod;
+    position: relative;
+    bottom: 30px;
+    left: 30px;
+
+}
+
+.fill{
+    position: relative;
+    right: 16px;
+    color: deepskyblue;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid deepskyblue;
+    padding: 10px;
+}
+.home{
+    position: relative;
+    bottom: 40px;
+    right: 12px;
+}
+.new-item{
+    display: flex;
+    flex-direction: column;
+    padding: 0 600px;
+    margin-top: 100px;
+
+}
+.item{
+    color: white;
+    border: 3px solid lightsteelblue;
+    border-radius: 6px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    horiz-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    left: 480px;
+    top: 80px;
+    padding: 10px;
+}
+.item-column{
+    margin-left: 20px;
+}
+.user{
+    color: whitesmoke;
+    margin-left: 500px;
+    position: relative;
+    top: 15px;
+}
+.middle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.search{
+    background-color: #4db5f9;
+    color: white;
+    width: 100px;
+    height: 20px;
+    border-radius: 9px;
+    border-color: #4db5f9;
+    cursor: auto;
+    font-weight: 600;
+    font-size: 10px;
+    margin-top: 10px;
+}
+.search:hover{
+    background-color: mediumturquoise;
+}
+.price{
+    width: 150px;
+    height: 25px;
+}
+.sort{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    align-items: center;
+    position: relative;
+}
+
+.filter{
+    position: relative;
+ }
+.wrong{
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid red;
+    padding: 10px;
+}
+
+#iphone2{
+    position: absolute;
+    bottom: 71px;
+    right: 59px;
+    overflow: hidden;
+}
+.app{
+    height: 40px;
+}
+
+#insta-photo{
+    width: 174px;
+    height: 65px;
+    margin-top: 30px;
+;
+}
+#facebook-logo{
+    width: 16px;
+    height: 16px;
+}
+#login{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-top: 90px;
+}
+main{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    top: 40px;
+    right: 26px;
+}
+#iphone{
+    position: relative;
+    bottom: 15px;
+}
+#user{
+    border: 1px solid deepskyblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#facebook{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: #385185;
+    font-weight: 500;
+    margin-top: 3%;
+    font-size: 15px;
+}
+#facebook-logo{
+    align-self: center;
+    margin-right: 7px;
+    margin-bottom: 2px;
+}
+#user-data{
+    display: flex;
+    flex-direction: column;
+    margin-top: 31px;
+
+}
+.register{
+    color: deepskyblue;
+    border: 1px solid deepskyblue;
+    text-align: center;
+    padding: 19px 0;
+}
+.small-text{
+    font-size: 14px;
+}
+
+.register a{
+    text-decoration: underline;
+    color: cyan;
+}
+
+.data-field{
+    width: 269px;
+    height: 38px;
+    border: 1px solid #dedede;
+    border-radius: 1px;
+    margin-bottom: 6px;
+    outline: none;
+}
+
+#enter{
+    background-color: #4db5f9;
+    color: white;
+    width: 269px;
+    height: 32px;
+    border-radius: 9px;
+    border-color: #4db5f9;
+    cursor: auto;
+    font-weight: 600;
+    margin-top: 29px;
+    margin-bottom: 40px;
+    font-size: 13px;
+}
+
+.line{
+    border-top: 1px solid black;
+    height: 1px;
+    width: 5px;
+}
+#or{
+    margin-top: 16px;
+    text-transform: uppercase;
+    color: #8e8e8e;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+#or:before{
+    background-color: #1c1e21;
+    box-sizing: border-box;
+    height: 2px;
+    width: 25px;
+    vertical-align: middle;
+    border: 1px solid;
+}
+
+#forget{
+    margin-top: 8px;
+    text-decoration: none;
+    color: #00376b;
+    font-size: 12px;
+    margin-bottom: 21px;
+}
+#install{
+    text-align: center;
+}
+#install-photos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.app{
+    margin-right: 7px;
+}
+#menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+#menu li{
+    list-style-type: none;
+}
+#menu li a{
+    text-decoration: none;
+    color: #8e8e8e;
+    margin-left: 16px;
+}
+#menu li a:hover{
+    text-decoration: underline;
+}
+#languages{
+    border: none;
+    outline: none;
+    background-color: white;
+    background-position-x: left;
+}
+footer{
+    font-size: 13px;
+    color: #8e8e8e;
+}
+#languages{
+    font-size: 13px;
+    color: #8e8e8e;
+}
+#foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    bottom: 10px;
+}

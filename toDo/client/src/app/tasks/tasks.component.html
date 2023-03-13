@@ -1,0 +1,11 @@
+<div class="new-task">
+  <h1>ToDoList</h1>
+  <form id="new-task-form" (ngSubmit)="AddTask()">
+    <input type="text"  [(ngModel)]="message" name="message" placeholder="enter a task" autocomplete="off" id="new-task-input">
+    <input type="submit" value="Add" id="new-task-submit">
+  </form>
+</div>
+
+<div *ngFor="let task of tasks" class="task-list">
+  <app-task [task]="task" (SaveTask)="SaveTask($event)" (DeleteTask)="DeleteTask($event)"></app-task>
+</div>

@@ -1,0 +1,118 @@
+.head{
+  background-color: black;
+  color: gray;
+  font-size: 12px;
+  padding: 1px 50px;
+}
+header{
+  margin-bottom: 10px;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+#new-task-submit{
+  background-color: royalblue;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  margin-left: 9px;
+}
+#new-task-input{
+  width: 75%;
+  padding: 4px;
+  margin-left: 60px;
+}
+#new-task-submit{
+  /*margin-left: 10px;*/
+}
+
+input{
+  border-radius: 4px;
+  border-width: 1px;
+}
+h1{
+  font-weight: 500;
+}
+.new-task{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  margin: 40px auto;
+}
+#new-task-form{
+  display: flex;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.task-list{
+  display: flex;
+  width: 500px;
+  margin: 0 auto;
+}
+.task-list-style{
+  border-bottom: none;
+}
+.task{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid gray;
+  margin-right: 50px;
+  padding: 10px 4px;
+  margin-bottom: 7px;
+  width: 510px;
+
+}
+.text{
+  border: none;
+  outline: none;
+  appearance: none;
+  margin-left: 14%;
+}
+
+.lineThrough{
+  text-decoration: line-through;
+}
+button{
+  background: none;
+  border: none;
+}
+
+.input{
+  border: none;
+  position: relative;
+  left: 20px;
+}
+.input:hover{
+  border: none;
+}
+.input:active{
+  border: none;
+}
+
+
+
+.edit{
+  position: relative;
+  left: 12px;
+
+}
+.actions{
+  position: relative;
+  left: 235px;
+}
+.delete{
+  position: relative;
+  left: 10px;
+}

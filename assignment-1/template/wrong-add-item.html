@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="../static/css/index.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+</head>
+<body>
+<header>
+  <h2 class="head-item shop">SHOP</h2>
+  <div class="head-item menu">
+    <a href="/home" class="menu-item">Главная</a>
+    <a href="/add-item" class="menu-item" style="text-decoration: underline">Добавить товар</a>
+  </div>
+  <div class="head-item user">
+    <a href="/">Log out</a>
+  </div>
+</header>
+
+<form class="new-item" action="/save-item">
+  <h2 class="fill" style="color: red; border: 1px solid red">Заполните все поля!</h2>
+  <input type="text" placeholder="Название" class="data-field" name="name">
+  <input type="text" placeholder="Страна" class="data-field" name="country">
+  <input type="text" placeholder="Цена" class="data-field" name="price">
+  <input type="submit" value="Добавить" id="enter">
+</form>
+
+
+
+
+</body>
+</html>
